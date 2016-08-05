@@ -6,6 +6,9 @@
 		body{
 			padding: 40px;
 		}
+		.carousel-inner > .item > img {
+    		margin: 0 auto;
+		}
 	</style>
 </head>
 <body>
@@ -79,6 +82,75 @@ inverse == black navbar-->
 			</div>
 		</section>
 	</div> <!-- End Container -->
+	<section>
+		<div class="well">
+			<div class="container text-center">
+				<h3>Subsribe for more free stuff</h3>
+				<p>Enter your Name and Email</p>
+				<form action = "" class="form-inline">
+					<div class="form-group">
+						<label for = "subscription">Subscribe</label>
+						<input type = "text" class="form-control" id = "subscription" placeholder = "Your Name">
+					</div>
+					<div class="form-group">
+						<label for = "email">Email address</label>
+						<input type = "text" class="form-control" id = "email" placeholder = "Your Email">
+					</div>
+					<button type = "submit" class = "btn btn-warning">Submit</button>
+					<hr>
+				</form>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- gallery -->
+	<div class="container">
+		<section>
+			<div class="page-header" id = "gallery">
+				<h2>Gallery <small>Check out our owesome gallery</small> </h2>
+			</div>
+			<div class="carousel slide" id = "screenshot-carousel" data-ride = "carousel">
+				<ol class="carousel-indicators">
+					<li data-target = "#screenshot-carousel" data-slide-to = "0" class = "active"></li>
+					<li data-target = "#screenshot-carousel" data-slide-to = "1"></li>
+					<li data-target = "#screenshot-carousel" data-slide-to = "2"></li>
+					<li data-target = "#screenshot-carousel" data-slide-to = "3"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="highway.jpg" alt = "text of the image">
+						<div class="carousel-caption">
+							<h3>Highway</h3>
+							<p>Life is complicated</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="painting.jpg" alt = "text of the image">
+						<div class="carousel-caption">
+							<h3>Great Painting</h3>
+							<p>Sublime!</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="street.jpg" alt = "text of the image">
+						<div class="carousel-caption">
+							<h3>Busy Busy</h3>
+							<p>The bustles of a city</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="river.jpg" alt = "text of the image">
+						<div class="carousel-caption">
+							<h3>Serenity</h3>
+							<p>Peace of mind</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
 <!-- external js  -->
 	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src = "https://maxcdn.bootstrapcdn.	com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
