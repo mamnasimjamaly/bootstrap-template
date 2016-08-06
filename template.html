@@ -9,6 +9,12 @@
 		.carousel-inner > .item > img {
     		margin: 0 auto;
 		}
+
+		.center-block {
+			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+		}
 	</style>
 </head>
 <body>
@@ -29,7 +35,7 @@ inverse == black navbar-->
 				<ul class = "nav navbar-nav" >
 					<li> <a href="#feedback">Feedback</a>
 					<li> <a href="#gallery">Gallery</a>
-					<li> <a href="#features">features</a>
+					<li> <a href="#features">Features</a>
 					<li> <a href="#faq">FAQ</a>
 					<li> <a href="#contact">Contact Us</a>
 				</ul>
@@ -146,12 +152,178 @@ inverse == black navbar-->
 							<p>Peace of mind</p>
 						</div>
 					</div>
-				</div>
+				</div> <!-- end carousel inner -->
+				<a href="#screenshot-carousel" class = "left carousel-control" data-slide= "prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a href="#screenshot-carousel" class = "right carousel-control" data-slide= "next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
 			</div>
 		</section>
 	</div>
 
-<!-- external js  -->
+	<!-- features -->
+	<div class="container" id = "features">
+		<div class="page-header">
+			<h2>Features <small>Some of the cool features of this app</small> </h2>
+		</div> <!-- end page header -->
+		<div class="row">
+			<div class="col-lg-8 text-center">
+				<h3>Feature 1</h3>
+				<p>This is the description of cool feature 1.</p>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-responsive center-block" src = "imac.jpg" alt = "image"></img>
+			</div>
+		</div> <!-- end row -->
+		<div class="row">
+			<div class="col-lg-8 text-center">
+				<h3>Feature 2</h3>
+				<p>This is the description of cool feature 2.</p>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-responsive center-block" src = "smartphone.jpg" alt = "image"></img>
+			</div>
+		</div> <!-- end row -->
+		<div class="row">
+			<div class="col-lg-8 text-center">
+				<h3>Feature 3</h3>
+				<p>This is the description of cool feature 3.</p>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-responsive center-block" src = "user.jpg" alt = "image"></img>
+			</div>
+		</div> <!-- end row -->
+		
+		<hr>
+
+		<div class="row text-center">
+			<div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<span class="glyphicon glyphicon-heart"></span>
+						<h4>This is heading 1</h4>
+						<p>The is the description of heading 1</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<span class="glyphicon glyphicon-star"></span>
+						<h4>This is heading 2</h4>
+						<p>The is the description of heading 3</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<h4>This is heading 3</h4>
+						<p>The is the description of heading 3</p>
+					</div>
+				</div>
+			</div>
+		</div> <!-- end row -->
+	</div>	<!-- end container -->	
+
+	<!-- FAQ -->
+	<div class="container">
+		<section>
+			<div class="page-header" id = "faq">
+				<h2>Frequently asked questions</h2>
+			</div> <!-- end page header -->
+			<!-- collapsable panels in faq -->
+			<div class="panel-group" id = "accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapse-1" data-toggle = "collapse" data-parent = "accordion">Question One</a>
+						</div> <!-- end panel title -->
+						<div id = "collapse-1" class = "panel-collapse collapse">
+							This is the answer of Question 1.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapse-2" data-toggle = "collapse" data-parent = "accordion">Question Two</a>
+						</div> <!-- end panel title -->
+						<div id = "collapse-2" class = "panel-collapse collapse">
+							This is the answer of Question 2.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapse-3" data-toggle = "collapse" data-parent = "accordion">Question three</a>
+						</div> <!-- end panel title -->
+						<div id = "collapse-3" class = "panel-collapse collapse">
+							This is the answer of Question 3.
+						</div>
+					</div>
+				</div>	
+			</div> <!-- end panel group -->
+		</section>
+	</div> <!-- end container -->
+
+	<!-- contact -->
+	<div class="container">
+		<section>
+			<div class="page-header" id = "contact">
+				<h2>Send Us a Message</h2>
+			</div> <!-- end page header  -->
+			<div class="row">
+				<div class="col-lg-4">
+					<address>
+					 	<strong>Wired wiki pvt. limited</strong> <br/>
+					 	1234 Strange Lane <br/>
+					 	Apt. Number xxx <br/>
+					 	Vancouver, BC <br/>
+					 	Phone: +1 604 000 0000
+					</address>
+				</div>
+				<div class="col-lg-8">
+					<form action = "" class = "form-horizontal">
+						<div class="form-group">
+							<div class="row">
+								<label for = "user-name" class = "col-lg-2 control-label">Name</label>
+								<div class="col-lg-10">
+									<input placeholder = "Your Name" type = "text" id = "user-name" class="form-control"></input>
+								</div>
+							</div> <!-- end row -->
+							<div class="row">
+								<label for = "email" class = "col-lg-2 control-label">Email</label>
+								<div class="col-lg-10">
+									<input placeholder = "Your Email" type = "text" id = "email" class="form-control"></input>
+								</div>
+							</div> <!-- end row -->
+							<div class="row">
+								<label for = "user-msg" class = "col-lg-2 control-label">Message</label>
+								<div class="col-lg-10">
+									<textarea id = "user-msg" class="form-control" placeholder = "What's on your mind?" ></textarea>
+								</div>
+							</div> <!-- end row -->
+							<br/>
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2">
+									<button class = "btn btn-primary" type = "submit" name = "submit" id = "submit">Submit</button>
+								</div>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</section>
+	</div> <!-- end container -->
+
+	
+	<!-- external js  -->
 	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src = "https://maxcdn.bootstrapcdn.	com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
